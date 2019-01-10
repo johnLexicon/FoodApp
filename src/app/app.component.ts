@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  menuPage: string = 'recipes';
+
+  onChangeMenuPage(menuPage){
+    this.menuPage = menuPage;
+    console.log(this.menuPage);
+  }
 }
